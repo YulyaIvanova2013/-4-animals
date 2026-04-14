@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Animals Grammar — ВПР 6 класс</title>
+  <title>Animals Grammar — mobile</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Baloo+2:wght@400;600;700;800&display=swap');
 
@@ -61,7 +61,7 @@
 
     h1 {
       font-family: 'Baloo 2', cursive;
-      font-size: 3rem;
+      font-size: 2.2rem;
       line-height: 1.05;
       color: #ff5ca8;
       text-shadow: 0 2px 0 #fff;
@@ -174,7 +174,7 @@
       border: 4px solid #ffe2f0;
       border-radius: 26px;
       padding: 24px;
-      line-height: 2.15;
+      line-height: 2.4;
       font-size: 1.18rem;
       box-shadow: 0 8px 18px rgba(0,0,0,0.05);
     }
@@ -214,10 +214,11 @@
       outline: none;
       background: transparent;
       font-family: inherit;
-      font-size: 0.96rem;
+      font-size: 1.05rem;
       font-weight: 700;
       color: #4b4061;
       max-width: 160px;
+      padding: 4px;
     }
 
     .buttons {
@@ -232,10 +233,10 @@
       cursor: pointer;
       font-family: inherit;
       font-weight: 700;
-      font-size: 1rem;
+      font-size: 1.1rem;
       color: #fff;
       border-radius: 999px;
-      padding: 14px 22px;
+      padding: 16px 20px;
       box-shadow: 0 10px 18px rgba(0,0,0,0.1);
       transition: transform .2s ease;
     }
@@ -307,14 +308,40 @@
     @media (max-width: 720px) {
       body { padding: 12px; }
       header, .selector, section.main { padding-left: 14px; padding-right: 14px; }
-      h1 { font-size: 2.35rem; }
+      h1 { font-size: 2rem; }
       h2 { font-size: 1.65rem; }
-      .task-box { padding: 18px; font-size: 1.05rem; line-height: 2.05; }
+      .task-box { padding: 18px; font-size: 1.05rem; line-height: 2.2; }
       .task-box h3 { font-size: 1.55rem; }
-      select { max-width: 118px; font-size: .9rem; }
+      select { max-width: 100%; font-size: 1rem; }
       .buttons { flex-direction: column; }
       .btn { width: 100%; }
       .result .score { font-size: 3rem; }
+    }
+
+    @media (max-width: 480px) {
+      .gap-wrap {
+        display: block;
+        width: 100%;
+        margin: 8px 0;
+      }
+
+      select {
+        width: 100%;
+        max-width: 100%;
+      }
+
+      .buttons {
+        position: sticky;
+        bottom: 10px;
+        background: rgba(255,255,255,0.92);
+        padding: 10px;
+        border-radius: 20px;
+      }
+
+      .task-box {
+        font-size: 1rem;
+        line-height: 2.15;
+      }
     }
   </style>
 </head>
